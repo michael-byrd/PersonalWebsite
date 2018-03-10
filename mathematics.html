@@ -7,6 +7,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-bet.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="personalStyleSheet.css">
     <link rel="stylesheet" href="sidebar.css">
@@ -14,21 +15,13 @@
 
 
 
-
+<body>
 <header>
-  <nav class = "navbar navbar-expand-sm row">
+  <nav class = "nav navbar navbar-expand-sm row">
     <ul>
       <li><a href="index.html">Home</a></li>
-      <!-- <li><a href="#about">About</a></li> -->
       <li><a href="mathematics.html">Mathematics</a></li>
       <li><a href="computer_science.html">Computer Science</a></li>
-      <!-- <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Academics</a>
-        <div class="dropdown-content">
-          <a href="#">Mathematics</a>
-          <a href="#">Computer Science</a>
-        </div>
-      </li> -->
     </ul>
   </nav>
 
@@ -39,25 +32,34 @@
   </div>
 </header>
 
-<body>
+<div class="container">
 
-  <div class = "main">
+<nav class = "sidebar">
+  <ul class = "sidebar">
+    <li><a href="#">Algebra</a></li>
+    <li><a href="#">Number Theory</a></li>
+    <li><a href="#">Algebraic Geometry</a></li>
+  </ul>
+</nav>
+
+<!-- <main> -->
+<article>
     <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis, elit eu laoreet congue, odio diam lacinia odio, ac scelerisque elit dolor ut sem. Ut posuere cursus ante, eu mattis nisi venenatis at. Quisque maximus dui nec purus rhoncus porta. Donec commodo in dolor accumsan tempor. Quisque at varius sapien. Ut convallis arcu eu viverra fringilla. Sed tincidunt est vitae erat finibus, ut vulputate leo rhoncus. Integer lacinia lectus et massa rhoncus egestas. Nullam et lorem sapien. Etiam mi lectus, rhoncus sed cursus at, tincidunt et ipsum. Sed quam nibh, fringilla ut nisl pulvinar, accumsan imperdiet urna. Nulla euismod sodales leo vel faucibus. Praesent condimentum libero vitae congue congue. Curabitur vel est non dui faucibus pellentesque. Suspendisse libero urna, porta vitae viverra dictum, placerat id quam.
-    </p>
-  </div>
+  </p>
+</article>
+<!-- </main> -->
 
-</body>
-
-<footer>
-<div class = "container-fluid row">
-  <div class = "row center color rounded">
-    <div class = "col-md-12 footer">
-      <a href = "https://github.com/michael-byrd" target = "_blank">GitHub</a> |
-      <a href = "mailto:mcb4548@uncw.edu">Email</a>
-    </div>
-  </div>
 </div>
 
+<footer class = "footer">
+<div class = "container-fluid">
+  <div class = "row center color rounded">
+      <a href = "https://github.com/michael-byrd" target = "_blank">GitHub</a> |
+      <a href = "mailto:mcb4548@uncw.edu">Email</a>
+  </div>
+</div>
 </footer>
+
+</body>
 </html>

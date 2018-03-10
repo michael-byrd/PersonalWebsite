@@ -1,5 +1,10 @@
 @import url("https://bootswatch.com/flatly/bootstrap.min.css");
 
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
 h1 {
     color: #007073;
 }
@@ -15,12 +20,8 @@ p {
 body {
   padding-top: 0px;
 }
-footer {
-  padding-left: 0px;
-  padding-right: 0px;
-}
 
-ul {
+.nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -28,11 +29,11 @@ ul {
     background-color: #333;
 }
 /* List Items */
-li {
+.nav li {
     float: left;
 }
 /* List Item Links */
-li a, .dropbtn {
+.nav li a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
@@ -40,11 +41,11 @@ li a, .dropbtn {
     text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+.nav li a:hover, .dropdown:hover .dropbtn {
     background-color: #800020;
 }
 
-li.dropdown {
+.nav li.dropdown {
     display: inline-block;
 }
 
@@ -94,42 +95,31 @@ li.dropdown {
   font-size: 115%;
 }
 
-
-/* The sidebar menu */
-.sidenav {
-    height: auto; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
-    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
-    /* z-index: 1; /* Stay on top */  */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
+.footer {
+  height: 50px;
+  line-height: 50px;
 }
 
-/* The navigation menu links */
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-}
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #f1f1f1;
-}
+  .sidebar {
+      float: left;
+      max-width: 190px;
+      margin: 0;
+      padding: 1em;
+  }
 
-/* Style page content */
-.main {
-    margin-left: 0px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
-}
+  .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+  }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
+  .sidebar ul a {
+      text-decoration: none;
+  }
+
+  article {
+      margin-left: 200px;
+      border-left: 1px solid gray;
+      padding: 1em;
+      overflow: hidden;
+  }

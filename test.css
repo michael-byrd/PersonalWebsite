@@ -1,44 +1,29 @@
-@import url("https://bootswatch.com/flatly/bootstrap.min.css");
-
-body {
-  padding-top: 50px;
-}
-footer {
-  padding-left: 15px;
-  padding-right: 15px;
+main,
+main aside,
+main .content {
+  height: calc(100vh - 100px);
 }
 
-/*
- * Off Canvas
- * --------------------------------------------------
- */
-@media screen and (max-width: 768px) {
-  .row-offcanvas {
-    position: relative;
-    -webkit-transition: all 0.25s ease-out;
-    -moz-transition: all 0.25s ease-out;
-    transition: all 0.25s ease-out;
-    background:#ecf0f1;
-  }
-
-  .row-offcanvas-left
-  .sidebar-offcanvas {
-    left: -40%;
-  }
-
-  .row-offcanvas-left.active {
-    left: 40%;
-  }
-
-  .sidebar-offcanvas {
-    position: absolute;
-    top: 0;
-    width: 40%;
-    margin-left: 12px;
-  }
+main {
+  margin-top: 50px;
 }
 
-#sidebar {
-    padding:15px;
-    margin-top:10px;
+main aside,
+main .content {
+  padding: 15px 0;
+}
+
+main aside {
+  background: red;
+}
+
+main .content {
+  overflow-y: auto;
+  background: blue;
+}
+
+.footer {
+  height: 50px;
+  line-height: 50px;
+  background: #F8F8F8;
 }
